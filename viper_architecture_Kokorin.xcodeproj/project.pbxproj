@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		583FE8E12186009A00B673C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE8E02186009A00B673C2 /* AppDelegate.swift */; };
+		583FE8E62186009A00B673C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583FE8E42186009A00B673C2 /* Main.storyboard */; };
+		583FE8E92186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 583FE8E72186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodeld */; };
+		583FE8EB2186009B00B673C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583FE8EA2186009B00B673C2 /* Assets.xcassets */; };
+		583FE8EE2186009B00B673C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583FE8EC2186009B00B673C2 /* LaunchScreen.storyboard */; };
+		583FE8F7218600BE00B673C2 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE8F6218600BE00B673C2 /* SplashController.swift */; };
+		583FE8FA218600CF00B673C2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE8F9218600CF00B673C2 /* HomeController.swift */; };
+		583FE8FD218600E300B673C2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE8FC218600E300B673C2 /* LoginController.swift */; };
+		583FE9012186011600B673C2 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE9002186011600B673C2 /* RegisterController.swift */; };
+		583FE9042186017200B673C2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE9032186017200B673C2 /* UserModel.swift */; };
+		583FE906218604B200B673C2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE905218604B200B673C2 /* CoreDataManager.swift */; };
+		583FE9082186073B00B673C2 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE9072186073B00B673C2 /* UserStorage.swift */; };
+		58FF0B24219D392F007F992B /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0B23219D392F007F992B /* StorageService.swift */; };
+		58FF0B30219D5984007F992B /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */; };
+		58FF0B31219D5984007F992B /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0B2F219D5984007F992B /* User+CoreDataProperties.swift */; };
+		CC59055AA6FD3DC969B798B2 /* Pods_viper_architecture_Kokorin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E46EE5E2AE6000A68EA62F /* Pods_viper_architecture_Kokorin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21B83012369C55C432272F10 /* Pods-viper_architecture_Kokorin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper_architecture_Kokorin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper_architecture_Kokorin/Pods-viper_architecture_Kokorin.debug.xcconfig"; sourceTree = "<group>"; };
+		56E46EE5E2AE6000A68EA62F /* Pods_viper_architecture_Kokorin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_architecture_Kokorin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		583FE8DD2186009A00B673C2 /* viper_architecture_Kokorin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper_architecture_Kokorin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		583FE8E02186009A00B673C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		583FE8E52186009A00B673C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		583FE8E82186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = viper_architecture_Kokorin.xcdatamodel; sourceTree = "<group>"; };
+		583FE8EA2186009B00B673C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		583FE8ED2186009B00B673C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		583FE8EF2186009B00B673C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		583FE8F6218600BE00B673C2 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		583FE8F9218600CF00B673C2 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		583FE8FC218600E300B673C2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		583FE9002186011600B673C2 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		583FE9032186017200B673C2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		583FE905218604B200B673C2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		583FE9072186073B00B673C2 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		58FF0B23219D392F007F992B /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "../User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58FF0B2F219D5984007F992B /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "../User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA230C2DD0F8C3F8BA269BFD /* Pods-viper_architecture_Kokorin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper_architecture_Kokorin.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper_architecture_Kokorin/Pods-viper_architecture_Kokorin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		583FE8DA2186009A00B673C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC59055AA6FD3DC969B798B2 /* Pods_viper_architecture_Kokorin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53D4513B86244DF04B4D9F45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E46EE5E2AE6000A68EA62F /* Pods_viper_architecture_Kokorin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		583FE8D42186009A00B673C2 = {
+			isa = PBXGroup;
+			children = (
+				583FE8DF2186009A00B673C2 /* viper_architecture_Kokorin */,
+				583FE8DE2186009A00B673C2 /* Products */,
+				D7EFB6692460710DF6478441 /* Pods */,
+				53D4513B86244DF04B4D9F45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		583FE8DE2186009A00B673C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				583FE8DD2186009A00B673C2 /* viper_architecture_Kokorin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		583FE8DF2186009A00B673C2 /* viper_architecture_Kokorin */ = {
+			isa = PBXGroup;
+			children = (
+				58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */,
+				58FF0B2F219D5984007F992B /* User+CoreDataProperties.swift */,
+				583FE9022186016900B673C2 /* Models */,
+				583FE8FE218600E700B673C2 /* Register */,
+				583FE8FB218600D800B673C2 /* Login */,
+				583FE8F8218600C300B673C2 /* Home */,
+				583FE8F5218600A600B673C2 /* Splash */,
+				583FE8E02186009A00B673C2 /* AppDelegate.swift */,
+				583FE8E42186009A00B673C2 /* Main.storyboard */,
+				583FE8EA2186009B00B673C2 /* Assets.xcassets */,
+				583FE8EC2186009B00B673C2 /* LaunchScreen.storyboard */,
+				583FE8EF2186009B00B673C2 /* Info.plist */,
+				583FE8E72186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodeld */,
+			);
+			path = viper_architecture_Kokorin;
+			sourceTree = "<group>";
+		};
+		583FE8F5218600A600B673C2 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				583FE8F6218600BE00B673C2 /* SplashController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		583FE8F8218600C300B673C2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				583FE8F9218600CF00B673C2 /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		583FE8FB218600D800B673C2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				583FE8FC218600E300B673C2 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		583FE8FE218600E700B673C2 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				583FE9002186011600B673C2 /* RegisterController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		583FE9022186016900B673C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				583FE9032186017200B673C2 /* UserModel.swift */,
+				583FE905218604B200B673C2 /* CoreDataManager.swift */,
+				583FE9072186073B00B673C2 /* UserStorage.swift */,
+				58FF0B23219D392F007F992B /* StorageService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7EFB6692460710DF6478441 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21B83012369C55C432272F10 /* Pods-viper_architecture_Kokorin.debug.xcconfig */,
+				BA230C2DD0F8C3F8BA269BFD /* Pods-viper_architecture_Kokorin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		583FE8DC2186009A00B673C2 /* viper_architecture_Kokorin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 583FE8F22186009B00B673C2 /* Build configuration list for PBXNativeTarget "viper_architecture_Kokorin" */;
+			buildPhases = (
+				444E397D3FBF02B9FD72862F /* [CP] Check Pods Manifest.lock */,
+				583FE8D92186009A00B673C2 /* Sources */,
+				583FE8DA2186009A00B673C2 /* Frameworks */,
+				583FE8DB2186009A00B673C2 /* Resources */,
+				1249E7D8E183A680379EE47E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = viper_architecture_Kokorin;
+			productName = viper_architecture_Kokorin;
+			productReference = 583FE8DD2186009A00B673C2 /* viper_architecture_Kokorin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		583FE8D52186009A00B673C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Alexander Kolovatov";
+				TargetAttributes = {
+					583FE8DC2186009A00B673C2 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 583FE8D82186009A00B673C2 /* Build configuration list for PBXProject "viper_architecture_Kokorin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 583FE8D42186009A00B673C2;
+			productRefGroup = 583FE8DE2186009A00B673C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				583FE8DC2186009A00B673C2 /* viper_architecture_Kokorin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		583FE8DB2186009A00B673C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583FE8EE2186009B00B673C2 /* LaunchScreen.storyboard in Resources */,
+				583FE8EB2186009B00B673C2 /* Assets.xcassets in Resources */,
+				583FE8E62186009A00B673C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1249E7D8E183A680379EE47E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-viper_architecture_Kokorin/Pods-viper_architecture_Kokorin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper_architecture_Kokorin/Pods-viper_architecture_Kokorin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		444E397D3FBF02B9FD72862F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-viper_architecture_Kokorin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		583FE8D92186009A00B673C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583FE9082186073B00B673C2 /* UserStorage.swift in Sources */,
+				583FE8F7218600BE00B673C2 /* SplashController.swift in Sources */,
+				58FF0B31219D5984007F992B /* User+CoreDataProperties.swift in Sources */,
+				583FE8FD218600E300B673C2 /* LoginController.swift in Sources */,
+				583FE9012186011600B673C2 /* RegisterController.swift in Sources */,
+				583FE9042186017200B673C2 /* UserModel.swift in Sources */,
+				58FF0B24219D392F007F992B /* StorageService.swift in Sources */,
+				583FE8E92186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodeld in Sources */,
+				583FE906218604B200B673C2 /* CoreDataManager.swift in Sources */,
+				58FF0B30219D5984007F992B /* User+CoreDataClass.swift in Sources */,
+				583FE8E12186009A00B673C2 /* AppDelegate.swift in Sources */,
+				583FE8FA218600CF00B673C2 /* HomeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		583FE8E42186009A00B673C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				583FE8E52186009A00B673C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		583FE8EC2186009B00B673C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				583FE8ED2186009B00B673C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		583FE8F02186009B00B673C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		583FE8F12186009B00B673C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		583FE8F32186009B00B673C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B83012369C55C432272F10 /* Pods-viper_architecture_Kokorin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = viper_architecture_Kokorin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ragnaCode.viper-architecture-Kokorin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		583FE8F42186009B00B673C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA230C2DD0F8C3F8BA269BFD /* Pods-viper_architecture_Kokorin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = viper_architecture_Kokorin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ragnaCode.viper-architecture-Kokorin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		583FE8D82186009A00B673C2 /* Build configuration list for PBXProject "viper_architecture_Kokorin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583FE8F02186009B00B673C2 /* Debug */,
+				583FE8F12186009B00B673C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		583FE8F22186009B00B673C2 /* Build configuration list for PBXNativeTarget "viper_architecture_Kokorin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583FE8F32186009B00B673C2 /* Debug */,
+				583FE8F42186009B00B673C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		583FE8E72186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				583FE8E82186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodel */,
+			);
+			currentVersion = 583FE8E82186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodel */;
+			path = viper_architecture_Kokorin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 583FE8D52186009A00B673C2 /* Project object */;
+}

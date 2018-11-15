@@ -1,0 +1,16 @@
+PODS:
+  - Sync (5.1.0)
+
+DEPENDENCIES:
+  - Sync
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Sync
+
+SPEC CHECKSUMS:
+  Sync: 0412c2b068eb7cf1a04607e948ef92cbd6114d0f
+
+PODFILE CHECKSUM: a62ebf5b50d457f9c4b0f1b32217d54291ff5d0b
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Pods_viper_architecture_Kokorin {
+  umbrella header "Pods-viper_architecture_Kokorin-umbrella.h"
+
+  export *
+  module * { export * }
+}
