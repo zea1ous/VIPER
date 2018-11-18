@@ -29,16 +29,37 @@ class UserStorage {
         }
     }
     
-    class func getUser() -> User {
+    class func getUser() -> User? {
         let context = StorageService.shared.dataStack.viewContext
         let request = NSFetchRequest<User>(entityName: NSStringFromClass(User.self))
-        var user: User!
+        var user: User?
         
         do {
             let results = try context.fetch(request)
             
             if let fetchedUser = results.first {
                 user = fetchedUser
+            }
+            
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
+        return user
+    }
+    
+    class func getUserWith(name: String, password: String) -> User? {
+        let context = StorageService.shared.dataStack.viewContext
+        let request = NSFetchRequest<User>(entityName: NSStringFromClass(User.self))
+        var user: User?
+        
+        do {
+            let results = try context.fetch(request)
+            
+            for userData in results {
+                if userData.name == name, userData.password == password {
+                    user = userData
+                }
             }
             
         } catch let error as NSError {

@@ -16,7 +16,6 @@ class HomeController: UIViewController {
         
     }
     
-
     @IBAction func handleLogout(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

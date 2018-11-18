@@ -20,8 +20,22 @@ class LoginController: UIViewController {
     }
     
     @IBAction func handleLogin(_ sender: UIButton) {
-        let user = UserStorage.getUser()
-        print(user.name, user.password)
+        guard let name = nameTextField.text else {
+            print("Name field is empty")
+            return
+        }
+        
+        guard let password = passwordTextField.text else {
+            print("Password field is empty")
+            return
+        }
+        
+        guard let user = UserStorage.getUserWith(name: name, password: password) else {
+            print("User with this name is not exist")
+            return
+        }
+        print(user.name)
+        print(user.password!)
     }
     
     /*

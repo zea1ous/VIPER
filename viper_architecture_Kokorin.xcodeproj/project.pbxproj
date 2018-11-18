@@ -17,7 +17,6 @@
 		583FE8FD218600E300B673C2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE8FC218600E300B673C2 /* LoginController.swift */; };
 		583FE9012186011600B673C2 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE9002186011600B673C2 /* RegisterController.swift */; };
 		583FE9042186017200B673C2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE9032186017200B673C2 /* UserModel.swift */; };
-		583FE906218604B200B673C2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE905218604B200B673C2 /* CoreDataManager.swift */; };
 		583FE9082186073B00B673C2 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583FE9072186073B00B673C2 /* UserStorage.swift */; };
 		58FF0B24219D392F007F992B /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0B23219D392F007F992B /* StorageService.swift */; };
 		58FF0B30219D5984007F992B /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */; };
@@ -40,11 +39,10 @@
 		583FE8FC218600E300B673C2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		583FE9002186011600B673C2 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		583FE9032186017200B673C2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		583FE905218604B200B673C2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		583FE9072186073B00B673C2 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		58FF0B23219D392F007F992B /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
-		58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "../User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		58FF0B2F219D5984007F992B /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "../User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58FF0B2F219D5984007F992B /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BA230C2DD0F8C3F8BA269BFD /* Pods-viper_architecture_Kokorin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper_architecture_Kokorin.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper_architecture_Kokorin/Pods-viper_architecture_Kokorin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,14 +87,11 @@
 		583FE8DF2186009A00B673C2 /* viper_architecture_Kokorin */ = {
 			isa = PBXGroup;
 			children = (
-				58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */,
-				58FF0B2F219D5984007F992B /* User+CoreDataProperties.swift */,
-				583FE9022186016900B673C2 /* Models */,
-				583FE8FE218600E700B673C2 /* Register */,
-				583FE8FB218600D800B673C2 /* Login */,
-				583FE8F8218600C300B673C2 /* Home */,
-				583FE8F5218600A600B673C2 /* Splash */,
+				58DE055121A14B5100162EEE /* Modules */,
+				58DE055021A14AAC00162EEE /* User */,
+				58DE054F21A14A7700162EEE /* Entities */,
 				583FE8E02186009A00B673C2 /* AppDelegate.swift */,
+				58FF0B23219D392F007F992B /* StorageService.swift */,
 				583FE8E42186009A00B673C2 /* Main.storyboard */,
 				583FE8EA2186009B00B673C2 /* Assets.xcassets */,
 				583FE8EC2186009B00B673C2 /* LaunchScreen.storyboard */,
@@ -138,15 +133,33 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		583FE9022186016900B673C2 /* Models */ = {
+		58DE054F21A14A7700162EEE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				58FF0B2E219D5984007F992B /* User+CoreDataClass.swift */,
+				58FF0B2F219D5984007F992B /* User+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		58DE055021A14AAC00162EEE /* User */ = {
 			isa = PBXGroup;
 			children = (
 				583FE9032186017200B673C2 /* UserModel.swift */,
-				583FE905218604B200B673C2 /* CoreDataManager.swift */,
 				583FE9072186073B00B673C2 /* UserStorage.swift */,
-				58FF0B23219D392F007F992B /* StorageService.swift */,
 			);
-			path = Models;
+			path = User;
+			sourceTree = "<group>";
+		};
+		58DE055121A14B5100162EEE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				583FE8FB218600D800B673C2 /* Login */,
+				583FE8FE218600E700B673C2 /* Register */,
+				583FE8F8218600C300B673C2 /* Home */,
+				583FE8F5218600A600B673C2 /* Splash */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		D7EFB6692460710DF6478441 /* Pods */ = {
@@ -286,7 +299,6 @@
 				583FE9042186017200B673C2 /* UserModel.swift in Sources */,
 				58FF0B24219D392F007F992B /* StorageService.swift in Sources */,
 				583FE8E92186009A00B673C2 /* viper_architecture_Kokorin.xcdatamodeld in Sources */,
-				583FE906218604B200B673C2 /* CoreDataManager.swift in Sources */,
 				58FF0B30219D5984007F992B /* User+CoreDataClass.swift in Sources */,
 				583FE8E12186009A00B673C2 /* AppDelegate.swift in Sources */,
 				583FE8FA218600CF00B673C2 /* HomeController.swift in Sources */,
